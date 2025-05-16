@@ -16,6 +16,8 @@ return new class extends Migration
         $table->string('nombre');
         $table->string('correo');
         $table->string('telefono');
+        $table->string('direccion')->nullable(); // Ejemplo: columna opcional
+        $table->date('fecha_nacimiento')->nullable(); // Eje
         $table->timestamps();
     });
 }
