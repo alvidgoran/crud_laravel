@@ -6,7 +6,13 @@ use Illuminate\Database\Eloquent\Model;
 
 class Profesor extends Model
 {
-  protected $fillable = ['nombre', 'correo', 'telefono', 'especialidad'];
+    protected $table = 'profesores';
 
-
+    // Lista de campos permitidos para asignación masiva
+    protected $fillable = [
+        'nombre',
+        'correo',
+        'telefono',
+        'especialidad',
+    ];
 }

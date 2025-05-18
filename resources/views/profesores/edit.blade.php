@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'Editar Profesor')
+@section('EDITAR PROFESOR', 'Editar Profesor')
 
 @section('content')
     <h2>Editar Profesor</h2>
@@ -15,6 +15,9 @@
 
         <label>Teléfono:</label>
         <input type="text" name="telefono" value="{{ $profesor->telefono }}" required><br><br>
+
+        <label>Especialidad:</label>
+        <input type="text" name="especialidad" value="{{ $profesor->especialidad }}" required><br><br>
 
         <button type="submit" class="btn">Actualizar</button>
     </form>

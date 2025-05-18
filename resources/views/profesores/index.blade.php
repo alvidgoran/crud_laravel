@@ -12,6 +12,7 @@
                 <th>Nombre</th>
                 <th>Correo</th>
                 <th>Teléfono</th>
+                <th>Especialidad</th>
                 <th>Acciones</th>
             </tr>
         </thead>
@@ -21,6 +22,7 @@
                     <td>{{ $profesor->nombre }}</td>
                     <td>{{ $profesor->correo }}</td>
                     <td>{{ $profesor->telefono }}</td>
+                    <td>{{$profesor->especialidad}}</td>
                     <td>
                         <a href="{{ route('profesores.edit', $profesor) }}" class="btn">Editar</a>
                         <form action="{{ route('profesores.destroy', $profesor) }}" method="POST" style="display:inline;">

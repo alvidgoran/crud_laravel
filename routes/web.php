@@ -5,7 +5,10 @@ use App\Http\Controllers\EstudianteController;
 
 use App\Http\Controllers\ProfesorController;
 
-Route::resource('profesores', ProfesorController::class);
+Route::resource('profesores', ProfesorController::class)->parameters([
+    'profesores' => 'profesor'
+]);
+
 
 
 

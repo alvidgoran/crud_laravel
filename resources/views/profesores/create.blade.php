@@ -15,6 +15,9 @@
         <label>Teléfono:</label>
         <input type="text" name="telefono" required><br><br>
 
+        <label>Especialidad:</label>
+        <input type="text" name="especialidad" required><br><br>
+
         <button type="submit" class="btn">Guardar</button>
     </form>
 @endsection
